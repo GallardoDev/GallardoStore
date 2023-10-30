@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+{{error}}
+   <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/principal.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper">bienvenido</span>
+            <span class="section-heading-lower">Mercado Virtual</span>
+          </h2>
+          <p class="mb-3">Descubre nuestra tienda online y los servicios que ofrecemos. Acá 
+            encontrarás una amplia gama de productos de varias categorías, así como servicios 
+            de distinta índole, ofrecidos por los mejores profecionales.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+	<main class="container py-5">
+		<section class="card card-body">
+		<h1 class="display-1 text-center">Gallardo's Store</h1>
+		<p>Bienvenido a la tienda de Gallardo's apps, acá puedes explorar nuestra 
+      gama de productos de alta calidad, los cuales puedes obtener desde la vista 
+      Tienda, agrega los productos al carrito de compras y paga con el medio que más
+      leagrade; para todo ello, le ofrecemos una app muy
+      intuitiva. Nuestro equipo de expertos en desarrollo de software e ingeniería
+      está listo para ayudarle a dar vida a sus proyectos y brindarle soluciones personalizadas
+      y de vanguardia. Mantente informado de nuestros trabajos en el apartado Blog y para contactarnos,
+      puedes hacerlo desde la vista Contacto, mediante la cual podrás dejarnos tu nombre email 
+      y el mensaje que nos desee entregar. Será atendido lo antes posible con mucho gusto.
+			</p>
+		
+
+		<div class="text-center">
+			<a class="btn btn-secondary" href="/signin/">
+				LOGIN
+			</a>
+	
+			<a class="btn btn-dark" href="/signup/">
+				SIGN UP
+			</a>
+		</div>
+
+	</section>
+	</main>
+
+  
+    <!-- Message -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Compromiso total</span>
+                <span class="section-heading-lower">Garantizado</span>
+              </h2>
+              <p class="mb-0">Con más de 3 años de experiencia a nuestras espaldas, 
+                desde Gallardo's app tenemos los conocimientos y herramientas necesarios 
+                para llevar a cabo cualquier diseño tanto en el mercado del software como
+                en el de la ingeniería mecánica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
